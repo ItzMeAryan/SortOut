@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorting Project</title>
+<link rel="stylesheet" href="index.css">
+<link rel="icon" type="image/png" href="Sort-Out.png">
+</head>
+<body>
+    <div id="loader">
+        <video id="load" autoplay  muted src ="sorting.mp4"></video>
+    </div> 
+<div class="container">
+    <h2>Sorting Project</h2>
+    <div>
+        <label for="inputNumbers">Enter Numbers (comma-separated):</label>
+        <input type="text" id="inputNumbers" placeholder="e.g., 5, 2, 8, 1, 6">
+    </div>
+    <div>
+        <label for="sortingAlgorithm">Select Sorting Algorithm:</label>
+        <select id="sortingAlgorithm">
+            <option value="Bubble Sort">Bubble Sort</option>
+            <option value="Selection Sort">Selection Sort</option>
+            <option value="Insertion Sort">Insertion Sort</option>
+            <option value="Merge Sort">Merge Sort</option>
+            <option value="Quick Sort">Quick Sort</option>
+            <option value="Count Sort">Count Sort</option>
+            <option value="Radix Sort">Radix Sort</option>
+            <option value="Bucket Sort">Bucket Sort</option>
+            <option value="Heap Sort">Heap Sort</option>
+        </select>
+    </div>
+    <button id="sortButton">Sort Numbers</button>
+    <div id="sortedOutput"></div>
+</div>
+<script src="sort.js"></script>
+</body>
+</html>
